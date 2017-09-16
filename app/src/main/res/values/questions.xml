@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name = "tq1">
+        <item> What is the name of the brief female ninja turtle in 1997? </item>
+        <item> Venus De Milo </item>
+        <item>Joan en Dela</item>
+        <item>Katrina Gabriella</item>
+        <item>Maria</item>
+        <item>Lucia DelMarccco</item>
+    </array>
+    <array name = "tq2">
+        <item> Which character continues to wear the original team color? </item>
+        <item> Raphael (Red) </item>
+        <item>Michelangelo (Orange) </item>
+        <item>Leonardo (Blue)</item>
+        <item>Donatelo (Purple)</item>
+        <item>Splinter (Grey)</item>
+    </array>
+    <array name = "tq3">
+        <item> Which reboot is considered closest to the original comics? </item>
+        <item> 2003 Series </item>
+        <item>1987 Series</item>
+        <item>2007 Series</item>
+        <item>2012 Series</item>
+        <item>2014 Movie</item>
+    </array>
+    <array name = "tq4">
+        <item> Which turtle was famously killed off in the comics for a brief period? </item>
+        <item>Donny </item>
+        <item>Mikey</item>
+        <item>Raph</item>
+        <item>Leo</item>
+        <item>April</item>
+    </array>
+    <array name = "tq5">
+        <item>What other superhero was involved with the turtles mutation?</item>
+        <item>Daredevil</item>
+        <item>Superman</item>
+        <item>Wolverine</item>
+        <item>Black Widow</item>
+        <item>Hulk</item>
+    </array>
+
+    <array name = "sq1">
+        <item> What is the lower thread holder called on a sewing machine?</item>
+        <item> Bobbin </item>
+        <item>Spool</item>
+        <item>Bool</item>
+        <item>Threader</item>
+        <item>Laxter</item>
+    </array>
+    <array name = "sq2">
+        <item> Which of the following refers to the relative positioning of the fabric in the final product?</item>
+        <item>Grainline</item>
+        <item>Centerline</item>
+        <item>Directoner</item>
+        <item>Pointer</item>
+        <item>Focus Point</item>
+    </array>
+    <array name = "sq3">
+        <item> What is the name for marking a position on the fabric using 4 stitches?</item>
+        <item>Tailor Tag</item>
+        <item>Seamstress Spot</item>
+        <item>Reminder</item>
+        <item>Pointer Notion</item>
+        <item>Future Point</item>
+    </array>
+    <array name = "sq4">
+        <item> What kind of material allows for clothing to have its own form? </item>
+        <item>Interfacing</item>
+        <item>Silk</item>
+        <item>Padding</item>
+        <item>Ironing</item>
+        <item>Cotten Blend</item>
+    </array>
+    <array name = "sq5">
+        <item>To do a traditional seam, what sides of the fabric do you sew together?</item>
+        <item>Right Sides</item>
+        <item>Wrong Sides</item>
+        <item>Layered Sides</item>
+        <item>Hemmed Line</item>
+        <item>Both Right and Wrong Sides</item>
+    </array>
+
+    <array name = "wq1">
+        <item> What kind of whale is known to act altruistically?</item>
+        <item>Humpback Whale</item>
+        <item>Whale Shark</item>
+        <item>Blue Whale</item>
+        <item>Beluga Whale</item>
+        <item>Sperm Whale</item>
+    </array>
+    <array name = "wq2">
+        <item> What are baby whales called?</item>
+        <item>Calf</item>
+        <item>Whaling</item>
+        <item>Pup</item>
+        <item>Orca</item>
+        <item>Foal</item>
+    </array>
+    <array name = "wq3">
+        <item>What conservation status are blue whales considered?</item>
+        <item> Endangered</item>
+        <item>Critically Endangered</item>
+        <item>Vulnerable</item>
+        <item>Near Threatened</item>
+        <item>Conservation Dependent</item>
+    </array>
+    <array name = "wq4">
+        <item>What is the weight of a blue whale?</item>
+        <item>173 tons</item>
+        <item>122 tons</item>
+        <item>223 tons</item>
+        <item>194 tons</item>
+        <item>94 tons</item>
+    </array>
+    <array name = "wq5">
+        <item>When do Humpback Whales feed?</item>
+        <item>Summer</item>
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Autumn</item>
+        <item>All Year</item>
+    </array>
+</resources>

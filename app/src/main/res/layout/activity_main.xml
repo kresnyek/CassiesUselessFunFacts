@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<!-- The main content view -->
+<FrameLayout
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/tmntButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:width="200dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="moveToTMNT"
+            android:text="TMNT"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/whaleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tmntButton"
+            android:layout_alignLeft="@+id/tmntButton"
+            android:layout_alignRight="@+id/tmntButton"
+            android:layout_alignStart="@+id/tmntButton"
+            android:layout_below="@+id/tmntButton"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Whales"/>
+
+        <Button
+            android:id="@+id/sewingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/whaleButton"
+            android:layout_alignLeft="@+id/whaleButton"
+            android:layout_alignRight="@+id/whaleButton"
+            android:layout_alignStart="@+id/whaleButton"
+            android:layout_below="@+id/whaleButton"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/holo_purple"
+            android:text="Sewing"/>
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sewingButton"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="49dp"
+            android:text="Current Scores:"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tmntScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sewingButton"
+            android:layout_alignStart="@+id/sewingButton"
+            android:layout_below="@+id/scoreText"
+            android:layout_marginTop="26dp"
+            android:text="TMNT score: "
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/sewingScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tmntScoreText"
+            android:layout_alignRight="@+id/tmntScoreText"
+            android:layout_below="@+id/tmntScoreText"
+            android:layout_marginTop="47dp"
+            android:text="Sewing score:"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/whalesScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sewingScoreText"
+            android:layout_alignRight="@+id/sewingScoreText"
+            android:layout_below="@+id/tmntScoreText"
+            android:layout_marginTop="15dp"
+            android:text="Whales score:"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tmntScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sewingScoreText"
+            android:layout_alignEnd="@+id/sewingButton"
+            android:layout_alignRight="@+id/sewingButton"
+            android:text="0"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/whalesScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tmntScoreValue"
+            android:layout_alignStart="@+id/tmntScoreValue"
+            android:layout_alignTop="@+id/whalesScoreText"
+            android:text="0"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/sewingScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/whalesScoreValue"
+            android:layout_alignStart="@+id/whalesScoreValue"
+            android:layout_alignTop="@+id/sewingScoreText"
+            android:text="0"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginEnd="38dp"/>
+    </RelativeLayout>
+</FrameLayout>
+<!-- The navigation drawer -->
+<ListView
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

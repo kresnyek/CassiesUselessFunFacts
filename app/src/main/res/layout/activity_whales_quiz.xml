@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iu.ckresnye.cassiesuselessfunfacts.WhalesQuiz">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_whales_quiz"/>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:text="Question here"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whale Quiz"
+            android:textSize="24sp"
+            android:layout_alignTop="@+id/scoreText"
+            />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/nextButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/nextButton"
+            android:layout_gravity="bottom|left"
+            android:layout_marginTop="58dp"
+            android:text="Score: "
+            android:textColor="@android:color/darker_gray"
+            app:layout_anchor="@+id/include"
+            app:layout_anchorGravity="top|right"
+            tools:fontFamily="sans-serif"/>
+
+        <RadioGroup
+            android:id="@+id/questionGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"/>
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/questionGroup"
+            android:layout_alignStart="@+id/questionGroup"
+            android:layout_below="@+id/questionGroup"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Prev"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="66dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

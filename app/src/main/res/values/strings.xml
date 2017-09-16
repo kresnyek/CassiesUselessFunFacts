@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cassie\'s Useless Fun Facts Quiz</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_tmntquiz">TMNTQuiz</string>
+    <string name="title_activity_sewing_quiz">SewingQuiz</string>
+    <string name="title_activity_whales_quiz">WhalesQuiz</string>
+</resources>
