@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity  {
     TextView sewingScoreText;
     TextView sewingScoreValue;
     TextView scoreText;
+    ImageView tmntCelebration;
 
     Button bTMNT;
     Button bWhales;
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity  {
         whalesScoreValue = (TextView)findViewById(R.id.whalesScoreValue);
         sewingScoreValue = (TextView)findViewById(R.id.sewingScoreValue);
         scoreText = (TextView) findViewById(R.id.scoreText);
+        tmntCelebration = (ImageView) findViewById(R.id.imageView);
+        tmntCelebration.setVisibility(View.INVISIBLE);
 
         tmntScoreValue.setText(Integer.toString(0));
         whalesScoreValue.setText(Integer.toString(0));
@@ -146,6 +150,8 @@ public class MainActivity extends AppCompatActivity  {
 
         if(this.getIntent().hasExtra("return")) //if already opened quiz, display scores
         {
+            //Incase return
+            tmntCelebration.setVisibility(View.INVISIBLE);
             //make them visible
             tmntScoreText.setVisibility(View.VISIBLE);
             whalesScoreText.setVisibility(View.VISIBLE);
@@ -171,6 +177,7 @@ public class MainActivity extends AppCompatActivity  {
                     + "\nWhales: " + Integer.toString(whalesScore)  + "/10"
                     + "\nSewing: " + Integer.toString(sewingScore)  + "/10",
                     Toast.LENGTH_LONG).show();
+            tmntCelebration.setVisibility(View.VISIBLE);
             bReset.performClick();
         }
 
